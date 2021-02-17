@@ -1,0 +1,93 @@
+<!DOCTYPE.htm>
+
+<html>
+
+<head>
+    
+    <title> Animations </title>
+    
+    <meta charset="utf-8">
+    
+    <style>
+        .bluebox {
+            
+            background-color: pink;
+            width: 70px;
+            height: 40px;
+            margin: 100;
+            position: relative;
+            
+            animation: myanimation 3s;
+        }
+        
+        @keyframes myanimation {
+            0% {background: red; left: 0px; top:0px}
+            25% {background: yellow; left: 400px; top:0px}
+            50% {background: blue; left: 400px; top:400px}
+            75% {background: green; left: 0px; top:400px}
+            100% {background: red; left: 0px; top:0px}
+        }
+        
+        .bluebox:hover{
+            width: 100px;
+            height: 100px;
+            transform: rotate(40deg);
+        }
+    
+        
+        .yellobox {
+            
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+    /*    transform: rotate(20deg);
+            -ms-transform: rotate(30deg);
+      */ 
+        
+        /*    transform: rotateX(50deg);
+            transform: rotateY(80deg);
+          */  transform: rotateZ(90deg);
+        }
+        
+        .orangebox{
+            
+            background-color: greenyellow;
+            width: 100px;
+            height: 100px;
+            transform: translate(23px, 40px);
+        }
+        
+        .redbox{
+            margin: 30;
+            width: 100px;
+            height: 100px;
+            color: red;
+            background-color: yellow;
+            transform: skew(10deg,10deg);
+        }
+        
+        .pinkbox{
+            
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-style: solid;
+            transform: translate(20px, 30px);
+        }
+    </style>
+    
+    
+    </head>
+<body>
+    <div class="bluebox"> <p> Facebook</p></div>
+    <div class="yellobox"> <p> Apple</p></div>
+    <div class="orangebox"> <p> TCS</p></div>
+    <br><br><br><br>
+        <div class="redbox"> <p> MYNTRA</p></div>
+    
+        <div class="pinkbox"> <p> GOOGLE</p></div>
+    
+    
+    </body>
+</html>
